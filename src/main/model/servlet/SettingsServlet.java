@@ -12,7 +12,7 @@ public class SettingsServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
-        // Получаем параметры из контекста
+
         String appName = getServletContext().getInitParameter("appName");
         String appVersion = getServletContext().getInitParameter("appVersion");
         String developerName = getServletContext().getInitParameter("developerName");
